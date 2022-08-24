@@ -1,0 +1,17 @@
+//
+// Copyright (C) 2022 Miku UI
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app_import {
+    name: "Gboard",
+    owner: "google",
+    apk: "prebuilt/Gboard.apk",
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+    overrides: ["LatinIME"],
+}
